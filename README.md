@@ -63,4 +63,6 @@ CONTRIBUTORS:
 -Divine Itu
 -Gift Don-Emmanuel
 -David Ubushakebwimana
+-Joyce Brown
+-Tamanda Kaunda
 
