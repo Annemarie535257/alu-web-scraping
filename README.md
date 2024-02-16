@@ -58,3 +58,9 @@ CONTRIBUTORS:
 -Diana Ruzindana
 -Jolly Umilisa
 -Irenee Gisubizo Dusingizimana
+-Benitha Rutagengwa
+-Nelly Iyabikoze
+-Divine Itu
+-Gift Don-Emmanuel
+-David Ubushakebwimana
+
