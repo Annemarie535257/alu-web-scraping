@@ -57,3 +57,4 @@ CONTRIBUTORS:
 -Khalid Abdillahi
 -Diana Ruzindana
 -Jolly Umilisa
+-Irenee Gisubizo Dusingizimana
