@@ -1,4 +1,4 @@
-ALU WEBSCRAPING AND DATA VISUALISATION
+ALU WEB SCRAPING AND DATA VISUALISATION
 
 CONTRIBUTORS:
 -Afsa Umutoniwase
@@ -7,3 +7,4 @@ CONTRIBUTORS:
 -Clarisse Tuyishimire
 -Lina Iratwe
 -Khalid Abdillahi
+-Diana Ruzindana
