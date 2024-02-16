@@ -32,7 +32,7 @@
   <script>
     $(document).ready(function () {
 
-      // Fetch Jumia data
+      // Fetch Jum data
 
       $.getJSON('./jumiadata.json', function (data) {
         renderChartJumia(data);
@@ -116,7 +116,7 @@
 
       });
 
-      const smartphoneDates = smartphoneData.map(item => item.date); // Extract dates
+      const smartphoneDates = smartphoneData.map(item => item.date); // Extract date
 
       var ctx = document.getElementById('priceChart3').getContext('2d');
       var priceChart = new Chart(ctx, {
