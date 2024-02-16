@@ -24,11 +24,11 @@ Requirements:
 
 Step 1: Clone the Repository
 Clone the repository from GitHub:
-> git clone https://github.com/Deolinda1506/alu_web-scraping-and-data-visualization_b4
+> git clone https://github.com/Annemarie535257/alu-web-scraping.git
 
 Step 2: Navigate to the Tests Directory
 Navigate to the tests directory of the cloned repository:
-> cd alu_web-scraping-and-data-visualization_b4/tests
+> cd alu-web-scraping
 
 Step 3: Test Scripts
 Run the test scripts for Jumia:
