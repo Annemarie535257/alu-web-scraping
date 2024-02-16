@@ -23,6 +23,7 @@ Requirements:
 #Steps for solving the Task
 
 Step 1: Clone the Repository
+
 Clone the repository from GitHub:
 > git clone https://github.com/Annemarie535257/alu-web-scraping.git
 
