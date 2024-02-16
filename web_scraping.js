@@ -24,7 +24,7 @@ async function scrapeSmartphones() {
             const productPrice = await productPriceElement.getText();
             const productName = await productNameElement.getText();
             console.log(`Product Name: ${productName} , Price: ${productPrice}`);
-            console.log('-------------------------------------------------------------------------------------------------------------------');
+            console.log('---------------------------------------------------------------------------------------------------');
         }
     } catch (error) {
         console.error('Scraping failed:', error);
