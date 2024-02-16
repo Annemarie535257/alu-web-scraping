@@ -1,5 +1,7 @@
 const { Builder, By, until } = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
+const fs = require('fs');
+const Table = require('cli-table3'); // Import cli-table3 library
 require('chromedriver');
 
 async function scrapeSmartphones() {
@@ -12,6 +14,8 @@ async function scrapeSmartphones() {
         .setChromeOptions(options)
         .build();
 
+    let scrapedData = [];
+
     try {
         await driver.get('https://www.jumia.com.ng/smartphones/');
         await driver.wait(until.elementLocated(By.css('.-paxs.row._no-g._4cl-3cm-shs')), 10000);
@@ -23,9 +27,14 @@ async function scrapeSmartphones() {
             const productPriceElement = await productElement.findElement(By.css('.info .prc'));
             const productPrice = await productPriceElement.getText();
             const productName = await productNameElement.getText();
-            console.log(`Product Name: ${productName} , Price: ${productPrice}`);
-            console.log('------------------');
+            scrapedData.push({ productName, productPrice });
         }
+
+        // Generate HTML table
+        const htmlTable = generateHtmlTable(scrapedData);
+        // Write HTML table to a separate HTML file
+        fs.writeFileSync('scraped_data.html', htmlTable);
+        console.log('HTML table has been saved to scraped_data.html');
     } catch (error) {
         console.error('Scraping failed:', error);
     } finally {
@@ -33,7 +42,18 @@ async function scrapeSmartphones() {
     }
 }
 
+function generateHtmlTable(data) {
+    let htmlTable = '<table border="1">';
+    // Add table headers
+    htmlTable += '<tr><th>Product Name</th><th>Price</th></tr>';
+    // Add table rows
+    data.forEach(item => {
+        htmlTable += `<tr><td>${item.productName}</td><td>${item.productPrice}</td></tr>`;
+    });
+    htmlTable += '</table>';
+    return htmlTable;
+}
+
 (async function main() {
     await scrapeSmartphones();
 })();
-
